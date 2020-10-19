@@ -11,9 +11,8 @@ $config = [
             'field' => 'documento',
             'label' => 'CPF/CNPJ',
             'rules' => 'required|trim|verific_cpf_cnpj|unique[clientes.documento.' . $this->uri->segment(3) . '.idClientes]',
-            'errors' => [
-                'verific_cpf_cnpj' => "O campo %s não é um CPF ou CNPJ válido."
-            ],
+    
+            
         ],
         [
             'field' => 'telefone',
